@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BFBDE753-F6AB-4E6A-BE29-7EFDEF0AF06C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senac.StockManagement.API", "Senac.StockManagement.API\Senac.StockManagement.API.csproj", "{0F352885-4AF5-42E7-ADE5-44A4A60099DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senac.StockManagement.Application", "Senac.StockManagement.Application\Senac.StockManagement.Application.csproj", "{6FE3B7AC-A8AA-4EF7-B29F-D75953C89C68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senac.StockManagement.Domain", "Senac.StockManagement.Domain\Senac.StockManagement.Domain.csproj", "{92066271-6BFC-44C0-93AB-471C45B0CC6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senac.StockManagement.Infrastructure", "Senac.StockManagement.Infrastructure\Senac.StockManagement.Infrastructure.csproj", "{5D5E3103-8A8C-41EB-99A8-96EEF3384DFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0F352885-4AF5-42E7-ADE5-44A4A60099DB} = {BFBDE753-F6AB-4E6A-BE29-7EFDEF0AF06C}
+		{6FE3B7AC-A8AA-4EF7-B29F-D75953C89C68} = {BFBDE753-F6AB-4E6A-BE29-7EFDEF0AF06C}
+		{92066271-6BFC-44C0-93AB-471C45B0CC6E} = {BFBDE753-F6AB-4E6A-BE29-7EFDEF0AF06C}
+		{5D5E3103-8A8C-41EB-99A8-96EEF3384DFA} = {BFBDE753-F6AB-4E6A-BE29-7EFDEF0AF06C}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F352885-4AF5-42E7-ADE5-44A4A60099DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F352885-4AF5-42E7-ADE5-44A4A60099DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F352885-4AF5-42E7-ADE5-44A4A60099DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F352885-4AF5-42E7-ADE5-44A4A60099DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FE3B7AC-A8AA-4EF7-B29F-D75953C89C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE3B7AC-A8AA-4EF7-B29F-D75953C89C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE3B7AC-A8AA-4EF7-B29F-D75953C89C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE3B7AC-A8AA-4EF7-B29F-D75953C89C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92066271-6BFC-44C0-93AB-471C45B0CC6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92066271-6BFC-44C0-93AB-471C45B0CC6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92066271-6BFC-44C0-93AB-471C45B0CC6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92066271-6BFC-44C0-93AB-471C45B0CC6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D5E3103-8A8C-41EB-99A8-96EEF3384DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D5E3103-8A8C-41EB-99A8-96EEF3384DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D5E3103-8A8C-41EB-99A8-96EEF3384DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D5E3103-8A8C-41EB-99A8-96EEF3384DFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

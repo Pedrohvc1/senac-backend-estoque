@@ -1,0 +1,6 @@
+@Senac.StockManagement.API_HostAddress = http://localhost:5017
+
+GET {{Senac.StockManagement.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
