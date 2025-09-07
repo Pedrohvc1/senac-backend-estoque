@@ -9,6 +9,7 @@ using Senac.StockManagement.Infrastructure.Context;
 using Senac.StockManagement.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using MediatR;
+using Senac.StockManagement.Application.Commands.Login;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,6 +42,7 @@ builder.Services.AddDbContext<StockDbContext>(options =>
 
 // Repositories
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 // Handlers
 builder.Services.AddScoped<IRequestHandler<CreateProductCommandRequest, CreateProductCommandResponse>, CreateProductCommandHandler>();
@@ -48,6 +50,7 @@ builder.Services.AddScoped<IRequestHandler<UpdateProductCommandRequest, UpdatePr
 builder.Services.AddScoped<IRequestHandler<GetAllProductsQueryRequest, IEnumerable<GetAllProductsQueryResponse>>, GetAllProductsQueryHandler>();
 builder.Services.AddScoped<IRequestHandler<GetProductByIdQueryRequest, GetProductByIdQueryResponse>, GetProductByIdQueryHandler>();
 
+builder.Services.AddScoped<IRequestHandler<LoginCommandRequest, LoginCommandResponse>, LoginCommandHandler>();
 var app = builder.Build();
     
 app.MapOpenApi();
