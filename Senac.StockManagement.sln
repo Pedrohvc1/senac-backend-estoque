@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senac.StockManagement.Appli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senac.StockManagement.Domain", "Senac.StockManagement.Domain\Senac.StockManagement.Domain.csproj", "{92066271-6BFC-44C0-93AB-471C45B0CC6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senac.StockManagement.Infrastructure", "Senac.StockManagement.Infrastructure\Senac.StockManagement.Infrastructure.csproj", "{5D5E3103-8A8C-41EB-99A8-96EEF3384DFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senac.StockManagement.Infrastructure.Data", "Senac.StockManagement.Infrastructure.Data\Senac.StockManagement.Infrastructure.Data.csproj", "{5D5E3103-8A8C-41EB-99A8-96EEF3384DFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

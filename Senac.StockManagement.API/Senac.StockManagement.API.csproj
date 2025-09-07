@@ -7,11 +7,19 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0"/>
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0"/>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.1"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.8"/>
+        <PackageReference Include="FluentValidation" Version="11.10.0"/>
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.10.0"/>
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\V1\" />
+      <ProjectReference Include="..\Senac.StockManagement.Application\Senac.StockManagement.Application.csproj" />
+      <ProjectReference Include="..\Senac.StockManagement.Infrastructure.Data\Senac.StockManagement.Infrastructure.Data.csproj" />
     </ItemGroup>
 
 </Project>
