@@ -165,11 +165,14 @@ Content-Type: application/json
 ```
 
 ## 🔮 Próximos Passos
-
+- ✅ ~~Implementar sistema básico de autenticação~~ - **Concluído**
+- [ ] Implementar hash de senhas com BCrypt
+- [ ] Implementar autenticação JWT real (atualmente usando token básico)
 - [ ] Implementar autenticação JWT
 - [ ] Adicionar validações com FluentValidation
 - [ ] Criar testes unitários e de integração
 - [ ] Implementar paginação nas listagens
+- [ ] Implementar middleware de autenticação para proteger endpoints
 - [ ] Adicionar filtros e ordenação
 - [ ] Dockerizar a aplicação
 - [ ] Implementar logs estruturados
@@ -181,5 +184,4 @@ Este projeto faz parte do curso do **Senac** e está sendo desenvolvido com fins
 
 ---
 
-**Desenvolvido com ❤️ usando .NET 9 e Clean Architecture**
 
