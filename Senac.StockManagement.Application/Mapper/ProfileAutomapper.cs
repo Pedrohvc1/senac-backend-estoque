@@ -1,6 +1,7 @@
 using AutoMapper;
 using Senac.StockManagement.Application.Commands.CreateProduct;
 using Senac.StockManagement.Application.Commands.Login;
+using Senac.StockManagement.Application.Commands.RegisterUser;
 using Senac.StockManagement.Application.Commands.UpdateProduct;
 using Senac.StockManagement.Application.Queries.GetAllProducts;
 using Senac.StockManagement.Application.Queries.GetProductById;
@@ -30,6 +31,10 @@ public class ProfileAutomapper : Profile
         CreateMap<Product, GetProductByIdQueryResponse>();
         
         // Login mappings
-        CreateMap<User, LoginCommandResponse>();
+        CreateMap<LoginCommandRequest, LoginCommandResponse>();
+        
+        // RegisterUser mappings
+        CreateMap<RegisterUserCommandRequest, User>();
+        CreateMap<User, RegisterUserCommandResponse>();
     }
 }
