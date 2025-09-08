@@ -19,6 +19,17 @@ builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 builder.Services.AddEndpointsApiExplorer();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins("http://localhost:5173", "http://localhost:3000")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials();
+    });
+});
+
 // Configuração do MediatR
 builder.Services.AddMediatR(AppDomain.CurrentDomain.Load("Senac.StockManagement.Application"));
 
@@ -52,8 +63,9 @@ builder.Services.AddScoped<IRequestHandler<GetProductByIdQueryRequest, GetProduc
 
 builder.Services.AddScoped<IRequestHandler<LoginCommandRequest, LoginCommandResponse>, LoginCommandHandler>();
 var app = builder.Build();
-    
+
 app.MapOpenApi();
+app.UseCors("AllowFrontend");
 app.UseHttpsRedirection();
 app.MapControllers();
 app.UseSwagger();
@@ -62,7 +74,8 @@ app.UseSwaggerUI(options =>
     var version = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
     foreach (var description in version.ApiVersionDescriptions)
     {
-        options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json", $"Stock Management Api - {description.GroupName.ToUpper()}");
+        options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json",
+            $"Stock Management Api - {description.GroupName.ToUpper()}");
     }
 });
 
